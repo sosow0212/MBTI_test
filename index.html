@@ -32,8 +32,14 @@
     <img id="img" src="lion.jpg" alt="animal" class="rounded-circle mt-5">
     <h2 id="animal" class="text-center mt-5">동물이름</h2>
     <h3 id="explain" class="text-center mt-5">설명</h3>
+
+    <!-- 더보기 -->
+    <div class="addthis_inline_share_toolbox_pu9s share"></div>
   </article>
 
+  <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-AEJhBtmNp6D4pbAP" data-ad-width="320"
+    data-ad-height="100"></ins>
+  <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 
 
   <input type="hidden" id="EI" value="0">
@@ -70,22 +76,22 @@
     }
 
     var result = {
-      "ISTJ" : {"animal": "하마", "explain": "하마 설명", "img": "lion.jpg"},
-      "ISFJ" : {"animal": "부엉이", "explain": "하마 설명", "img": "lion.jpg"},
-      "INFJ" : {"animal": "물소", "explain": "하마 설명", "img": "lion.jpg"},
-      "INTJ" : {"animal": "치타", "explain": "하마 설명", "img": "lion.jpg"},
-      "ISTP" : {"animal": "나무늘보", "explain": "하마 설명", "img": "lion.jpg"},
-      "ISFP" : {"animal": "거북이", "explain": "하마 설명", "img": "lion.jpg"},
-      "INFP" : {"animal": "코끼리", "explain": "하마 설명", "img": "lion.jpg"},
-      "INTP" : {"animal": "침팬지", "explain": "하마 설명", "img": "lion.jpg"},
-      "ESTP" : {"animal": "악어", "explain": "하마 설명", "img": "lion.jpg"},
-      "ESFP" : {"animal": "미어캣", "explain": "하마 설명", "img": "lion.jpg"},
-      "ENFP" : {"animal": "사자", "explain": "하마 설명", "img": "lion.jpg"},
-      "ENTP" : {"animal": "태양새", "explain": "하마 설명", "img": "lion.jpg"},
-      "ESTJ" : {"animal": "기린", "explain": "하마 설명", "img": "lion.jpg"},
-      "ESFJ" : {"animal": "고릴라", "explain": "하마 설명", "img": "lion.jpg"},
-      "ENFJ" : {"animal": "카피바라", "explain": "하마 설명", "img": "lion.jpg"},
-      "ENTJ" : {"animal": "호랑이", "explain": "하마 설명", "img": "lion.jpg"},
+      "ISTJ": { "animal": "하마", "explain": "하마 설명", "img": "lion.jpg" },
+      "ISFJ": { "animal": "부엉이", "explain": "하마 설명", "img": "lion.jpg" },
+      "INFJ": { "animal": "물소", "explain": "하마 설명", "img": "lion.jpg" },
+      "INTJ": { "animal": "치타", "explain": "하마 설명", "img": "lion.jpg" },
+      "ISTP": { "animal": "나무늘보", "explain": "하마 설명", "img": "lion.jpg" },
+      "ISFP": { "animal": "거북이", "explain": "하마 설명", "img": "lion.jpg" },
+      "INFP": { "animal": "코끼리", "explain": "하마 설명", "img": "lion.jpg" },
+      "INTP": { "animal": "침팬지", "explain": "하마 설명", "img": "lion.jpg" },
+      "ESTP": { "animal": "악어", "explain": "하마 설명", "img": "lion.jpg" },
+      "ESFP": { "animal": "미어캣", "explain": "하마 설명", "img": "lion.jpg" },
+      "ENFP": { "animal": "사자", "explain": "하마 설명", "img": "lion.jpg" },
+      "ENTP": { "animal": "태양새", "explain": "하마 설명", "img": "lion.jpg" },
+      "ESTJ": { "animal": "기린", "explain": "하마 설명", "img": "lion.jpg" },
+      "ESFJ": { "animal": "고릴라", "explain": "하마 설명", "img": "lion.jpg" },
+      "ENFJ": { "animal": "카피바라", "explain": "하마 설명", "img": "lion.jpg" },
+      "ENTJ": { "animal": "호랑이", "explain": "하마 설명", "img": "lion.jpg" },
     }
 
     function start() {
@@ -117,7 +123,7 @@
         ($("#TF").val() < 2) ? mbti += "F" : mbti += "T";
         ($("#JP").val() < 2) ? mbti += "P" : mbti += "J";
         alert(mbti);
-        $("#img").attr("src",result[mbti]["img"]);
+        $("#img").attr("src", result[mbti]["img"]);
         $("#animal").html(result[mbti]["animal"]);
         $("#explain").html(result[mbti]["explain"]);
 
@@ -133,7 +139,8 @@
   </script>
 
 
-
+  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6150752fec34ef24"></script>
 
 </body>
 
