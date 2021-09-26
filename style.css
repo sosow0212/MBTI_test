@@ -22,3 +22,8 @@ article {
   margin: 0 auto;
   /* 가운데 배치 */
 }
+
+.kakao_ad {
+  width: 320px;
+  margin: 0 auto;
+}
