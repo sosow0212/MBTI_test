@@ -29,9 +29,9 @@
   </article>
 
   <article class="result">
-    <img id="img" src="" alt="">
-    <h2 id="animal">동물이름</h2>
-    <h3 id="explain">설명</h3>
+    <img id="img" src="lion.jpg" alt="animal" class="rounded-circle mt-5">
+    <h2 id="animal" class="text-center mt-5">동물이름</h2>
+    <h3 id="explain" class="text-center mt-5">설명</h3>
   </article>
 
 
@@ -87,17 +87,26 @@
     });
 
     function next() {
-      if(num == 13) {
+      if (num == 13) {
         $(".question").hide();
         $(".result").show();
-      }
 
-      $(".progress-bar").attr('style', 'width: calc(100/12*' + num + '%)');
-      $("#title").html(q[num]["title"]);
-      $("#type").val(q[num]["type"]);
-      $("#A").html(q[num]["A"]);
-      $("#B").html(q[num]["B"]);
-      num++;
+        // 아래는 mbti 최종 로직
+        var mbti = "";
+        ($("#EI").val() < 2) ? mbti += "I" : mbti += "E";
+        ($("#SN").val() < 2) ? mbti += "N" : mbti += "S";
+        ($("#TF").val() < 2) ? mbti += "F" : mbti += "T";
+        ($("#JP").val() < 2) ? mbti += "P" : mbti += "J";
+        alert(mbti);
+
+      } else {
+        $(".progress-bar").attr('style', 'width: calc(100/12*' + num + '%)');
+        $("#title").html(q[num]["title"]);
+        $("#type").val(q[num]["type"]);
+        $("#A").html(q[num]["A"]);
+        $("#B").html(q[num]["B"]);
+        num++;
+      }
     }
   </script>
 
